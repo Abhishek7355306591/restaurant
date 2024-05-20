@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>menu</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md bg-secondary navbar-dark fixed-top">
+            <!-- Navbar content -->
+        </nav>
+
+        <!-- Breadcrumbs -->
+        <div class="row text-center text-light" id="fix">
+            <!-- Breadcrumb content -->
+        </div>
+
+        <!-- Menu selection buttons -->
+        <div class="container text-center mt-5">
+            <!-- Button group -->
+        </div>
+
+        <!-- BreakFast Menu Section -->
+        <div class="row mt-5 text-center">
+            <h2><b>Our BreakFast Menu</b></h2>
+        </div>
+
+        <!-- Menu items -->
+        <div class="container">
+            <div class="row no-gutters justify-content-center align-items-stretch mt-2">
+                <!-- Menu cards -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row mt-5">
+            <!-- Footer content -->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery is required -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/restaurant.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        $(document).ready(function(){
+            // Handle button click event
+            $('.btn-menu').click(function(){
+                var target = $(this).attr('data-target'); // Get the target section
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top // Scroll to the target section
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
